@@ -1,0 +1,46 @@
+.NotesList__container-dashboard {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.NotesList__h3-dashboard {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+.NotesList__container-widget-list {
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+}
+
+.NotesList__h3-widget-list {
+    margin: 5px;
+}
+
+.NotesList__ol {
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .NotesList__ol {
+        padding-left: 30px;
+    }
+
+    .NotesList__ol p {
+        font-size: 20px;
+    }
+
+    .NotesList__ol li {
+        font-size: 20px;
+        margin: 25px;
+    }
+
+    .NotesList__h3-dashboard {
+        font-size: 28px;
+    }
+}
