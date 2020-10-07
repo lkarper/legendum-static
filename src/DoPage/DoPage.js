@@ -134,12 +134,17 @@ const DoPage = (props) => {
                             {Object.keys(context.user).length !== 0
                                 ? 
                                     <> 
-                                        <button
-                                            className='button'
-                                            onClick={() => onCompletion(`/game/story/${parseInt(chapt) + 1}`)} 
-                                        >
-                                            On to the next chapter (progress will be saved)
-                                        </button>
+                                        {parseInt(chapt) !== context.exercises.length 
+                                            ?
+                                                <button
+                                                    className='button'
+                                                    onClick={() => onCompletion(`/game/story/${parseInt(chapt) + 1}`)} 
+                                                >
+                                                    On to the next chapter (progress will be saved)
+                                                </button>
+                                            :
+                                                <p>To be continued...check back soon!</p>
+                                        }
                                         <button
                                             className='button'
                                             onClick={() => onCompletion(`/dashboard`)} 
@@ -154,12 +159,16 @@ const DoPage = (props) => {
                                         </Link>
                                     </>
                                 : 
-                                    <Link 
-                                        className='DoPage__link button' 
-                                        to={`/game/story/${parseInt(chapt) + 1}`}
-                                    >
-                                        On the the next chapter
-                                    </Link>
+                                    parseInt(chapt) !== context.exercises.length 
+                                        ?
+                                            <Link 
+                                                className='DoPage__link button' 
+                                                to={`/game/story/${parseInt(chapt) + 1}`}
+                                            >
+                                                On the the next chapter
+                                            </Link>
+                                        :
+                                            <p>To be continued...check back soon!</p>
                             }
                         </> 
                     }
