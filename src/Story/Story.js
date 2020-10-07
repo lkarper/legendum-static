@@ -12,6 +12,10 @@ const Story = (props) => {
     const [response, setResponse] = useState();    
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props]);
+
+    useEffect(() => {
         const dialogue = STORE.dialogue.find(d => d.chapter_number === parseInt(chapt));
         setStoryTitle(dialogue.story_title);
         setDialogue(dialogue.pages);
