@@ -22,7 +22,9 @@ const Landing = (props) => {
                     alt='A friendly-looking, three-headed dog.'
                 />
             </div>
-            <section>
+            <section
+                className='Landing__section'
+            >
                 <header>
                     <h2>What is Legendum?</h2>
                 </header>
@@ -32,12 +34,16 @@ const Landing = (props) => {
                 <p>After you test the app, please fill out this <a className="Landing__feedback-link" href="https://forms.gle/VrAvhA4pQ4SxARf89" target="_blank" rel="noopener noreferrer">form</a>!</p>
                 <p>Thank you! Thank you! Thank you!</p>
             </section>
-            <section>
+            <section
+                className='Landing__section'
+            >
                 <header>
                     <h2>How does Legendum Work?</h2>
                 </header>
                 <p>Legendum was designed with two goals in mind: keep the learner engaged and build the learner's confidence.</p>
-                <section>
+                <section
+                    className='Landing__section'
+                >
                     <header>
                         <h3>Engagement Through Stories and Images</h3>
                     </header>
@@ -45,7 +51,9 @@ const Landing = (props) => {
                     <p>Each chapter begins with a story in English that sets the scene.</p>
                     <p><Link to='/game/story/1'>Click here</Link> to get started with Chapter 1!</p>
                 </section>
-                <section>
+                <section
+                    className='Landing__section'
+                >
                     <header>
                         <h3>Build your Confidence with Comprehensible Input</h3>
                     </header>
@@ -55,7 +63,9 @@ const Landing = (props) => {
                     <p>Registered users can save the grammatical tidbits that are presented and can even add personal notes.</p>
                     <p>Too exicted about Latin to start with an English story? Jump right in and <Link to ='/game/exercises/1/learn'>starting learning with Exercise One</Link></p>  
                 </section>
-                <section>
+                <section
+                    className='Landing__section'
+                >
                     <header>
                         <h3>Test yourself with short quizzes</h3>
                     </header>
@@ -63,11 +73,13 @@ const Landing = (props) => {
                     <p>These quizzes are low-stress undertakings. If an incorrect answer is given, the user is presented with a short hint or explanation on why the answer is incorrect. Users can simply try again if they get the question wrong and overall "grades" are not kept. Registered users have access to their notes throughout.</p>
                     <p>Already know some Latin and want to test yourself out right away? <Link to='/game/exercises/1/do'>Try the first quiz!</Link></p>
                 </section>
-                <section>
+                <section
+                    className='Landing__section'
+                >
                     <header>
                         <h3>Keep Track of your Progress</h3>
                     </header>
-                    <p>Registered users can track their progress through lessons and stories, see how many times they've completed each chapter, and access and edit their notes on the <Link to='/dashboard'>dashboard</Link></p>
+                    <p>Registered users can track their progress through lessons and stories, see how many times they've completed each chapter, and access and edit their notes on the <Link to='/dashboard'>dashboard</Link>.</p>
                 </section>
             </section>
         </>
