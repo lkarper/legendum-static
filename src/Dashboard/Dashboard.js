@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NextStory from '../NextStory/NextStory';
 import NotesList from '../NotesList/NotesList';
 import ProgressReport from '../ProgressReport/ProgressReport';
 import './Dashboard.css';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props.match.path]);
+
     return (
         <section className='Dashboard__outer-section'>
             <h2>Dashboard</h2>
