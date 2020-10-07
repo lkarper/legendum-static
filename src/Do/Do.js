@@ -11,6 +11,10 @@ const Do = (props) => {
     const [savedUserInput, setSavedUserInput] = useState({});
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props]);
+
+    useEffect(() => {
         const doPages = STORE.do_pages.filter(p => p.chapter_number === parseInt(chapt));
         setPages(doPages);
     }, [chapt]);
