@@ -1,0 +1,17 @@
+.Register__section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+}
+
+.Register__section h2 {
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 1000px) {
+    .Register__section h2 {
+        font-size: 36px;
+    }
+}
