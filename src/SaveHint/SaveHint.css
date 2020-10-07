@@ -5,6 +5,7 @@
 
 .SaveHint__form {
     margin: 5px;
+    max-width: 100%;
 }
 
 .SaveHint__form textarea {  

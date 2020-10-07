@@ -42,7 +42,10 @@ const MultipleChoice = (props) => {
     const choicesHTMLArray = shuffledChoices
         .filter(choice => choice !== '')
         .map((choice, i) => 
-            <div key={choice}>
+            <div 
+                key={choice}
+                className='MultipleChoice__input-div'
+            >
                 <input 
                     type="radio"
                     id={`choice_${i}`}

@@ -29,7 +29,9 @@ const TrueFalse = (props) => {
                         page={page} 
                         savedUserInput={savedUserInput} 
                     />
-                    <div>
+                    <div
+                        className='TrueFalse__input-div'
+                    >
                         <input 
                             type="radio"
                             id="true"
@@ -41,7 +43,9 @@ const TrueFalse = (props) => {
                         />
                         <label htmlFor="true">True/Vērum</label>
                     </div>
-                    <div>
+                    <div
+                        className='TrueFalse__input-div'
+                    >
                         <input 
                             type="radio"
                             id="false"
