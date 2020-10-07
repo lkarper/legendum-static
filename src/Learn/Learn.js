@@ -11,7 +11,7 @@ const Learn = (props) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [props]);
+    }, [chapt]);
 
     useEffect(() => {
         const learnPages = STORE.learn_pages.filter(p => p.chapter_number === parseInt(chapt));

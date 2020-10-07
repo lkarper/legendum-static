@@ -12,7 +12,7 @@ const Do = (props) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [props]);
+    }, [chapt]);
 
     useEffect(() => {
         const doPages = STORE.do_pages.filter(p => p.chapter_number === parseInt(chapt));
