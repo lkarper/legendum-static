@@ -1,0 +1,35 @@
+.Story__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Story__h2 {
+    margin: 5px;
+    z-index: 10;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.Story__loading {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .Story__container {
+        width: 800px;
+    }
+
+    .Story__h2 {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .Story__loading {
+        font-size: 40px;
+    }
+}
