@@ -1,0 +1,27 @@
+.RegistrationForm__form input {
+    margin-left: 5px;
+}
+
+.RegistrationForm__submit {
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1000px) {
+    .RegistrationForm__form label {
+        font-size: 20px;
+    }
+
+    .RegistrationForm__form input {
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .RegistrationForm__form p {
+        font-size: 20px;
+    }
+
+    .RegistrationForm__form li {
+        font-size: 20px;
+    }
+}
