@@ -1,0 +1,29 @@
+.SaveHint__submit {
+    margin: 5px;
+    max-width: 200px;
+}
+
+.SaveHint__form {
+    margin: 5px;
+}
+
+.SaveHint__form textarea {  
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+    .SaveHint__form {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+    }
+
+    .SaveHint__submit {
+        align-self: center;
+    }
+
+    #custom-note {
+        height: 200px;
+        font-size: 18px;
+    }
+}
