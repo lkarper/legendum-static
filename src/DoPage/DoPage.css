@@ -1,0 +1,125 @@
+.DoPage__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* height: calc(100vh - 125px); */
+}
+
+.DoPage__image {
+    bottom: 25px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-height: 75%;
+    max-width: 90%;
+    z-index: 100;
+    position: absolute;
+}
+
+.DoPage__text-container {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DoPage__text-container-end {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%; */
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.DoPage__background-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 300px;
+}
+
+.DoPage__background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 10;
+}
+
+.DoPage__do-link {
+    align-self: center;
+    margin: 5px;
+}
+
+.DoPage__text {
+    margin: 0;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.DoPage__button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.DoPage__nav-button {
+    width: 75px;
+}
+
+.DoPage__end-quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+}
+
+.DoPage__h2 {
+    margin: 5px;
+    z-index: 10;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.DoPage__link.button {
+    text-decoration: none;
+}
+
+.DoPage__end-quiz-container > .button {
+    margin: 5px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+    .DoPage__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    /* .DoPage__image {
+        max-height: 100%;
+    } */
+
+    .DoPage__h2 {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .DoPage__background-container {
+        border: 5px solid black;
+        width: 800px;
+        height: 500px;
+    }
+}
