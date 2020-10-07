@@ -1,0 +1,51 @@
+.LoginForm__container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+}
+
+.LoginForm__h2 {
+    font-weight: 400;
+}
+
+.LoginForm__input-label-container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    padding: 5px;
+}
+
+.LoginForm__input-label-container input {
+    width: 75%;
+    margin-left: 5px;
+}
+
+.LoginForm__error {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.LoginForm__submit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+    .LoginForm__h2 {
+        font-size: 40px;
+    }
+
+    .LoginForm__input-label-container label {
+        font-size: 20px;
+    }
+
+    .LoginForm__input-label-container input {
+        font-size: 20px;
+        width: 300px;
+    }
+}
