@@ -1,0 +1,22 @@
+.Do__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Do__loading {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .Do__container {
+        width: 800px;
+    }
+
+    .Do__loading {
+        font-size: 40px;
+    }
+}
