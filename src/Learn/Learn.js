@@ -10,6 +10,10 @@ const Learn = (props) => {
     const [page, setPage] = useState(1);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props]);
+
+    useEffect(() => {
         const learnPages = STORE.learn_pages.filter(p => p.chapter_number === parseInt(chapt));
         setPages(learnPages);
     }, [chapt]);
