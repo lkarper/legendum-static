@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import moment from 'moment';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import UserContext from '../contexts/UserContext';
@@ -14,7 +15,7 @@ const ChapterProgress = (props) => {
         <li>
             <h4>{exercise.exercise_title}{' '}{exercise.exercise_translation}</h4>
             <p>You've completed this chapter {timesCompleted === 1 ? '1 time' : `${timesCompleted} times`}</p>
-            {timesCompleted && 
+            {timesCompleted !== 0 && 
                 <div> 
                     <h5>You completed this exercise on: </h5>
                     <ul>
@@ -24,7 +25,7 @@ const ChapterProgress = (props) => {
                                 <li 
                                     key={p.id}
                                 >
-                                    {new Date(p.date_completed).toString()}
+                                    {moment(p.date_completed).format('MMM. Do YYYY, h:mm a')}
                                 </li>
                             )
                         }
