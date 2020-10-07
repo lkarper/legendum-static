@@ -61,7 +61,7 @@ const LoginPage = (props) => {
         setError(null);
         const user = STORE.users.find(u => u.user_name === userName && u.password === password);
         if (!user) {
-            setError('Username or password incorrect. Check your connection and input and try again');
+            setError('Username or password incorrect. Check your connection and input and try again.');
         } else {
             context.setUser({
                 id: user.id,
