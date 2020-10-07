@@ -9,7 +9,7 @@ const ChapterProgress = (props) => {
     const { exercise } = props;
 
     const context = useContext(UserContext);
-    const timesCompleted = context.progress.filter(p => p.exercise_id === exercise.id).length;
+    const timesCompleted = context.progress.filter(p => p.chapter_number === exercise.chapter_number).length;
 
     return (
         <li>
@@ -20,7 +20,7 @@ const ChapterProgress = (props) => {
                     <h5>You completed this exercise on: </h5>
                     <ul>
                         {context.progress
-                            .filter(p => p.exercise_id === exercise.id)
+                            .filter(p => p.chapter_number === exercise.chapter_number)
                             .map(p => 
                                 <li 
                                     key={p.id}
