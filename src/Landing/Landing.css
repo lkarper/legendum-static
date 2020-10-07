@@ -56,6 +56,11 @@
     margin: 20px 5px; 
 }
 
+.Landing__section p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
 @media screen and (min-width: 1000px) {
     .Landing__greeting-image {
         max-width: 50%;
