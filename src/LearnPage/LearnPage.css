@@ -1,0 +1,107 @@
+.LearnPage__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: calc(100% - 125px); */
+}
+
+.LearnPage__image {
+    bottom: 25px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-height: 75%;
+    max-width: 90%;
+    z-index: 100;
+    position: absolute;
+}
+
+.LearnPage__background-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 300px;
+}
+
+.LearnPage__background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 10;
+}
+
+.LearnPage__text-hints-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.LearnPage__text-container {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.LearnPage__h2 {
+    margin: 5px;
+    z-index: 10;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.LearnPage__do-link {
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.LearnPage__text {
+    margin: 0;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.LearnPage__button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.LearnPage__nav-button {
+    width: 75px;
+}
+
+@media screen and (min-width: 1000px) {
+    .LearnPage__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    /* .LearnPage__image {
+        max-height: 100%;
+    } */
+
+    .LearnPage__h2 {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .LearnPage__background-container {
+        width: 800px;
+        height: 500px;
+        border: 5px solid black;
+    }
+}
