@@ -25,6 +25,7 @@ const Hint = (props) => {
             chapter_number: exercise.chapter_number,
             exercise_title: exercise.exercise_title,
             exercise_translation: exercise.exercise_translation,
+            hint: hint.hint,
         }; 
         context.addNote(note);
         setNoteAdded(true);

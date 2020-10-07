@@ -23,6 +23,7 @@ const Note = (props) => {
             chapter_number: note.chapter_number,
             exercise_title: note.exercise_title,
             exercise_translation: note.exercise_translation,
+            hint: note.hint,
         };
         context.updateNotes(updatedNote);
         toggleShowEdit(false);

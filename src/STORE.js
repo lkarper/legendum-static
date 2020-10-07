@@ -1156,6 +1156,7 @@ export default {
             chapter_number: 1,
             exercise_title: "Exercitium prīmum: Salūtātiōnēs", 
             exercise_translation: "(Exercise one: Greetings)",
+            hint: "“Salvē” is a greeting like “Hello”.  It is how you greet one person."
         },
         {
             id: "e03b3d77-2b91-4b62-b714-efa45bcdca49",
@@ -1166,6 +1167,7 @@ export default {
             chapter_number: 1,
             exercise_title: "Exercitium prīmum: Salūtātiōnēs", 
             exercise_translation: "(Exercise one: Greetings)",
+            hint: "“Egō” is a pronoun.  It means “I”."
         },
         {
             id:"41a4df81-3966-4187-8b49-4bd74408e6bd",
@@ -1176,6 +1178,7 @@ export default {
             chapter_number: 1,
             exercise_title: "Exercitium prīmum: Salūtātiōnēs", 
             exercise_translation: "(Exercise one: Greetings)",
+            hint: "“Lūcī” is in the vocative case.  That’s a fancy way of saying that you use this form of the word “Lūcīus” to address directly someone named Lūcīus.",
         },
         {
             id: "0f486847-0244-4b18-ac1c-a438fce97630",
@@ -1186,6 +1189,7 @@ export default {
             chapter_number: 1,
             exercise_title: "Exercitium prīmum: Salūtātiōnēs", 
             exercise_translation: "(Exercise one: Greetings)",
+            hint: "“tibi” is a personal pronoun.  It literally means “for you”, but we can translate it like an adjective here and say “your”.",
         },
     ],
     progress: [],
