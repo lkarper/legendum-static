@@ -1,0 +1,10 @@
+.DialogueChoices__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 5px;
+}
+
+.DialogueChoices_choice-button {
+    margin: 5px;
+}
