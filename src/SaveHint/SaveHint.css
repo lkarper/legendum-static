@@ -11,6 +11,10 @@
     font-size: 16px;
 }
 
+.SaveHint__textarea {
+    width: 90%;
+}
+
 @media screen and (min-width: 1000px) {
     .SaveHint__form {
         display: flex;
@@ -22,7 +26,7 @@
         align-self: center;
     }
 
-    #custom-note {
+    .SaveHint__textarea {
         height: 200px;
         font-size: 18px;
     }

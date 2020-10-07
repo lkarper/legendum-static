@@ -18,11 +18,11 @@ const SaveHint = (props) => {
         >
             <textarea
                 id="custom-note"
+                className="SaveHint__textarea"
                 name="custom-note"
                 aria-label="Add a custom note here, if you'd like."
                 placeholder="Add a custom note here, if you'd like."
                 rows="4"
-                cols="35"
                 value={customNote}
                 onChange={(e) => setCustomNote(e.target.value)}
             />
